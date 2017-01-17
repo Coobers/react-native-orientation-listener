@@ -1,20 +1,81 @@
 {
-  "name": "react-native-orientation-listener",
-  "version": "0.0.4",
-  "description": "A react-native library for obtaining current device orientation",
-  "main": "index.js",
-  "keywords": [
-    "react-native",
-    "orientation",
-    "device orientation"
+  "_args": [
+    [
+      "react-native-orientation-listener@^0.0.4",
+      "/Users/mariusz/Documents/GIT/shoppveapp"
+    ]
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/walmartreact/react-native-orientation-listener.git"
+  "_from": "react-native-orientation-listener@>=0.0.4 <0.0.5",
+  "_id": "react-native-orientation-listener@0.0.4",
+  "_inCache": true,
+  "_location": "/react-native-orientation-listener",
+  "_nodeVersion": "5.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-native-orientation-listener-0.0.4.tgz_1457314366483_0.08252376690506935"
   },
-  "author": "Ken Wheeler",
+  "_npmUser": {
+    "email": "ken_wheeler@me.com",
+    "name": "thekenwheeler"
+  },
+  "_npmVersion": "3.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-orientation-listener",
+    "raw": "react-native-orientation-listener@^0.0.4",
+    "rawSpec": "^0.0.4",
+    "scope": null,
+    "spec": ">=0.0.4 <0.0.5",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/",
+    "/react-native-responsive-styles"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-orientation-listener/-/react-native-orientation-listener-0.0.4.tgz",
+  "_shasum": "b50de51ab059a5846b5fa15bada29b6d0174c4b7",
+  "_shrinkwrap": null,
+  "_spec": "react-native-orientation-listener@^0.0.4",
+  "_where": "/Users/mariusz/Documents/GIT/shoppveapp",
+  "author": {
+    "name": "Ken Wheeler"
+  },
+  "bugs": {
+    "url": "https://github.com/walmartreact/react-native-orientation-listener/issues"
+  },
+  "dependencies": {},
+  "description": "A react-native library for obtaining current device orientation",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "b50de51ab059a5846b5fa15bada29b6d0174c4b7",
+    "tarball": "https://registry.npmjs.org/react-native-orientation-listener/-/react-native-orientation-listener-0.0.4.tgz"
+  },
+  "gitHead": "40e1fa8c8fb5f0d6e5447f45b45f6b4ed37544af",
+  "homepage": "https://github.com/walmartreact/react-native-orientation-listener#readme",
+  "installable": true,
+  "keywords": [
+    "device orientation",
+    "orientation",
+    "react-native"
+  ],
   "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "thekenwheeler",
+      "email": "ken@outlook.com"
+    }
+  ],
+  "name": "react-native-orientation-listener",
+  "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walmartreact/react-native-orientation-listener.git"
+  },
+  "scripts": {},
+  "version": "0.0.4"
 }

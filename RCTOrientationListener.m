@@ -29,23 +29,26 @@
 - (void)deviceOrientationDidChange:(NSNotification *)notification
 {
     
-    UIDevice *currentDevice = [UIDevice currentDevice];
-    UIDeviceOrientation orientation = [currentDevice orientation];
+    UIApplication *sharedApplication = [UIApplication sharedApplication];
+    UIInterfaceOrientation orientation = [sharedApplication statusBarOrientation];
     
     NSString *orientationStr;
     switch (orientation) {
-        case UIDeviceOrientationPortrait:
-        case UIDeviceOrientationPortraitUpsideDown:
+        case UIInterfaceOrientationPortrait:
+        case UIInterfaceOrientationPortraitUpsideDown:
             orientationStr = @"PORTRAIT";
             break;
-        case UIDeviceOrientationLandscapeLeft:
-        case UIDeviceOrientationLandscapeRight:
+        case UIInterfaceOrientationLandscapeLeft:
+        case UIInterfaceOrientationLandscapeRight:
+            
             orientationStr = @"LANDSCAPE";
             break;
         default:
-            orientationStr = @"UNKNOWN";
+            orientationStr = @"PORTRAIT";
             break;
     }
+    
+    UIDevice *currentDevice = [UIDevice currentDevice];
     
     NSString *deviceStr = [currentDevice model];
     
@@ -58,25 +61,26 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(getOrientation:(RCTResponseSenderBlock)callback)
 {
     
-    UIDevice *currentDevice = [UIDevice currentDevice];
-    UIDeviceOrientation orientation = [currentDevice orientation];
+    UIApplication *sharedApplication = [UIApplication sharedApplication];
+    UIInterfaceOrientation orientation = [sharedApplication statusBarOrientation];
     
     NSString *orientationStr;
     switch (orientation) {
-        case UIDeviceOrientationPortrait:
-        case UIDeviceOrientationPortraitUpsideDown:
+        case UIInterfaceOrientationPortrait:
+        case UIInterfaceOrientationPortraitUpsideDown:
             orientationStr = @"PORTRAIT";
             break;
-        case UIDeviceOrientationLandscapeLeft:
-        case UIDeviceOrientationLandscapeRight:
+        case UIInterfaceOrientationLandscapeLeft:
+        case UIInterfaceOrientationLandscapeRight:
             
             orientationStr = @"LANDSCAPE";
             break;
         default:
-            orientationStr = @"UNKNOWN";
+            orientationStr = @"PORTRAIT";
             break;
     }
     
+    UIDevice *currentDevice = [UIDevice currentDevice];
     NSString *deviceStr = [currentDevice model];
     
     NSArray *orientationArray = @[orientationStr, deviceStr];
