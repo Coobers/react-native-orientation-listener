@@ -37,6 +37,20 @@ compile project(':com.walmartreact.ReactOrientationListener')
 .addPackage(new ReactOrientationListener())
 ```
 
+In Main activity add:
+
+```
+@Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Intent intent = new Intent("onConfigurationChanged");
+                intent.putExtra("newConfig", newConfig);
+                this.sendBroadcast(intent);
+    }
+```
+
+
+
 ###Usage
 
 Import the library:
